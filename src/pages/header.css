@@ -1,0 +1,153 @@
+.header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    height: 70px;
+    background-color: rgba(245, 173, 202, 0);
+    /* box-shadow: 0 4px 10px -4px  rgb(172, 115, 137); */
+
+}
+
+
+
+.header_option{
+    text-decoration: none;
+}
+
+.header_logo{
+    height: 47px;
+    width: auto;
+}
+
+
+.header_logo_container{
+    margin-left: 40px;
+    align-content: center;
+}
+
+.header_options_container{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-right: 3%;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.header_options_container div{
+    margin: 0px;
+    height: 100%;
+    align-content: center;
+    /* background-color: aliceblue; */
+    
+}
+
+.header_options_container div a{
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 510;
+}
+
+.header_options_container div a{
+    color: rgba(0, 0, 0, 0.856);
+}
+
+
+
+
+.header_options_container div:hover{
+    border-bottom: 2px solid black;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(58, 58, 58, 0.048)) */
+}
+
+
+.menu_icon{
+    background: none;
+    font-weight: 600;
+    font-size: 27px;
+    border: 0px;
+    margin-right: 3%;
+}
+
+.header_menuActive_options{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    display: flex;
+    justify-content: space-around;
+    background-image:linear-gradient(rgba(221, 219, 219, 0.137), rgba(107, 87, 60, 0.548));
+    transition: top 0.2s ease-in-out;
+}
+
+.header_menuActive_options.activa {
+    top: 0%; 
+  }
+
+.header_menuActive_option{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    
+}
+
+.header_menuActive_options div{
+    align-content: center;
+
+}
+
+.menu_icon_x{
+    background: none;
+    font-weight: 600;
+    font-size: 22px;
+    border: 0px;
+}
+
+
+.header_menuActive_options_FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header_menuActive_options_FAQ:hover{
+    text-decoration: underline;
+}
+
+.header_menuActive_option:hover{
+    border-bottom: 1px solid black;
+}
+
+.header_menuActive_options_FAQ #FAQ{
+    border-bottom: 0px solid black;
+}
+
+@media (max-width: 750px) {
+    .header_options_container{
+        display: none;
+    }
+
+    .header_logo_container{
+        margin-left: 20px;
+        
+    }
+}
+
+
+@media (min-width: 750px) {
+    .menu_icon{
+        display: none;
+    }
+    
+}
+
+@media (max-height: 400px){
+    .header_options_container div a{
+        font-size: 16px;
+        font-weight: 450;
+    }
+}

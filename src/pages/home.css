@@ -1,0 +1,55 @@
+.home{
+    background-size: cover;
+    background-position:center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.089), rgba(0, 0, 0, 0.856)),
+     url('../assets/Blurred_room_3.jpg');
+    min-height: 100vh;
+}
+
+
+
+.home_paragraph{
+    margin: 0px;
+    color: rgba(250, 250, 250, 0.897);
+    text-align: center;
+    height: 53vh;
+    align-content: end;
+    font-size: 2.7em;
+    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.685);
+}
+
+.home_image{
+    width: 260px;
+}
+
+
+.home_image{
+    filter: invert(100%);
+    /* margin-top: 1%; */
+}
+
+
+.home_image_container{
+    text-align: center;
+}
+
+
+@media (max-width: 600px){
+    .home_paragraph{
+        font-size: 2.1em;
+    }
+    .home_image{
+        margin-top: 10px;
+        width: 220px;
+    }
+}
+
+@media (max-height: 500px) {
+    .home_paragraph{
+        font-size: 2.1em;
+    }
+    .home_image{
+        width: 220px;
+    }
+}

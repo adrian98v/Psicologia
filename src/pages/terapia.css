@@ -23,7 +23,7 @@
 } */
 
 .text_image_container{
-    background-color: rgba(17, 17, 17, 0.712);
+    background-color: rgba(17, 17, 17, 0.651);
     color: rgb(209, 209, 209);
     width: 100%;
     display: flex;
@@ -84,7 +84,7 @@
         height: min-content;
         margin-top: 70px;
         padding-bottom: 18vh;
-
+        font-size: medium;
     }
 
     .p_container{
@@ -106,7 +106,8 @@
     }
 
     .imagen_terapia{
-        width: 60vw;
+        width: 70vw;
+        margin-left: 0px;
     }
     
 }

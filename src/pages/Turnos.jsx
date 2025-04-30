@@ -29,7 +29,6 @@ function Turnos(){
             window.alert("Por favor ingrese todos los datos")
         }
 
-        
 
     }
 
@@ -40,27 +39,28 @@ function Turnos(){
             <form onSubmit={handleSubmit} className='turnos_form' >
                 <label id='label_1'>Ingrese sus datos para pedir un turno</label>
           
-                <input type="text" placeholder="Nombre" name="nombre" onChange={(e)=>{setNombre(e.target.value)}}/>
+                <input required type="text" placeholder="Nombre" name="nombre" onChange={(e)=>{setNombre(e.target.value)}}/>
                 
-                <input type="text" placeholder="Apellido" name="apellido" onChange={(e)=>{setApellido(e.target.value)}}/>
+                <input required type="text" placeholder="Apellido" name="apellido" onChange={(e)=>{setApellido(e.target.value)}}/>
              
-                <input type="text" placeholder="Teléfono" name="telefono" onChange={(e)=>{settelefono(e.target.value)}}/>
+                <input required type="text" placeholder="Teléfono" name="telefono" onChange={(e)=>{settelefono(e.target.value)}}/>
                 
                 <input
                  type="number"
                  placeholder="Edad"
                  name="edad"
                  min="0"
+                 required
                  onChange={(e) => setEdad(e.target.value)}/>
                 
                 <label id="modalidad">Modalidad</label>
                 <div className='modalidad_button_container'>
                 <label id="checkbox-label">
-                    <input type="radio" name="modalidad" value="presencial" onChange={(e)=>{setModalidad(e.target.value)}} />
+                    <input type="radio" name="modalidad" value="presencial" required onChange={(e)=>{setModalidad(e.target.value)}} />
                         Presencial
                 </label>
                 <label id="checkbox-label">
-                    <input type="radio" name="modalidad" value="virtual" onChange={(e)=>{setModalidad(e.target.value)}}/>
+                    <input type="radio" name="modalidad" value="virtual" required onChange={(e)=>{setModalidad(e.target.value)}}/>
                         Virtual
                 </label>
                 </div>

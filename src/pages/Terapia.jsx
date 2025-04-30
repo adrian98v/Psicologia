@@ -17,7 +17,7 @@ export default function Terapia(){
                 preocupaciones, como así también lo que lo hace feliz. Es un espacio de trabajo que está
                 orientado, mediante las palabras, reflexiones y actividades de acuerdo a la necesidad y
                 procesos de cada quien, a mejorar su calidad de vida.</p>
-                <p id='p_2'>Tiempo: 50 minutos</p>
+                <p id='p_2'>Duración de la sesión: 50 minutos</p>
             </div>
             
             <div className='image_container'>

@@ -32,6 +32,12 @@
 
 .home_image_container{
     text-align: center;
+    opacity: 0;
+    transition: opacity 2.2s ease;
+}
+
+.home_image_container.visible{
+    opacity: 1;
 }
 
 
